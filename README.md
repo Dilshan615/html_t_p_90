@@ -59,30 +59,6 @@ A futuristic, high-performance interactive 3D WebGL experience featuring a holog
 
 ---
 
-## 🚀 Getting Started
-
-### Method 1: Direct File Launch
-Simply double-click [`index.html`](file:///c:/Users/dilsh/Desktop/project/03/index.html) or open it directly in any modern web browser (Chrome, Edge, Firefox, Brave, Safari).
-
-### Method 2: Local HTTP Server
-
-#### Using Python:
-```bash
-python -m http.server 3000
-```
-Then open your browser and navigate to:
-```
-http://localhost:3000
-```
-
-#### Using VS Code Live Server:
-Right-click [`index.html`](file:///c:/Users/dilsh/Desktop/project/03/index.html) and select **"Open with Live Server"**.
-
-#### Using Node.js (npx):
-```bash
-npx serve .
-```
-
 ---
 
 ## 🛠️ Tech Stack & Libraries
