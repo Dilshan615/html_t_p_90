@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive 3D Model | WebGL Core</title>
+  <meta name="description" content="Interactive 3D WebGL Torus Knot and Particle Field built with Three.js">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300f0ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='12 2 2 7 12 12 22 7 12 2'/><polyline points='2 17 12 22 22 17'/><polyline points='2 12 12 17 22 12'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <div class="scene-wrapper">
+    <!-- Three.js 3D WebGL Canvas Layer -->
+    <div id="canvas-container" title="Drag to rotate, click to burst particles"></div>
+
+    <!-- Minimal Futuristic Overlay -->
+    <header class="hud-overlay">
+      <div class="model-title">
+        <div class="pulse-dot"></div>
+        <span class="title-text">3D WebGL Core</span>
+      </div>
+
+      <div class="interactive-pill">
+        <button class="theme-btn theme-cyan active" data-theme="cyan" title="Cyan Palette" onclick="set3DTheme('cyan')"></button>
+        <button class="theme-btn theme-purple" data-theme="purple" title="Purple / Rose Palette" onclick="set3DTheme('purple')"></button>
+        <button class="theme-btn theme-emerald" data-theme="emerald" title="Emerald Palette" onclick="set3DTheme('emerald')"></button>
+        <div class="divider"></div>
+        <button class="burst-btn" onclick="triggerParticleBurst()">BURST</button>
+      </div>
+    </header>
+
+    <!-- Developed by SL Code Hub Badge -->
+    <div class="developer-badge">
+      <span class="badge-code-icon">&lt;/&gt;</span>
+      <span class="badge-text">Developed by <strong class="brand-name">SL Code Hub</strong></span>
+    </div>
+  </div>
+
+  <!-- 3D Scene Script -->
+  <script src="js/3d-scene.js"></script>
+</body>
+</html>
